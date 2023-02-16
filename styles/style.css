@@ -1,0 +1,172 @@
+/* common styles and utilities */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+
+/* this is a header styles */
+header {
+    background-color: #ff900e1a;
+}
+
+/* nav {
+    width: 100%;
+} */
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-text {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.menu-item {
+    display: flex;
+    gap: 40px;
+}
+
+.menu-item li {
+    list-style: none;
+
+}
+
+.menu-item li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    color: #424242;
+}
+
+/* this is  hero section here  */
+.container {
+    width: 1440px;
+    margin: 85px auto;
+
+}
+
+.brand-new {
+    width: 862px;
+    text-align: center;
+    margin: 0 auto 50px;
+
+}
+
+.brand-title {
+    font-weight: 700;
+    font-size: 64px;
+    color: #131313;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+}
+
+.btn-common {
+    background-color: #FF900E;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.hero-section-banner img {
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+/* this is a quick list section  */
+
+.quick-list {
+    display: flex;
+    column-gap: 70px;
+    align-items: center;
+}
+
+.quick-image-gallery {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #000;
+}
+
+#quick-list {
+    font-weight: 500;
+    color: #727272;
+}
+
+.title #feature {
+    color: #FF900E;
+}
+
+
+
+
+/* media queries */
+/* this is for mobile devices */
+@media only screen and (max-width: 576px) {
+    header {
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .logo-text {
+        font-size: 26px;
+    }
+
+    .menu-item {
+        gap: 40px;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .brand-new {
+        width: 100%;
+    }
+
+    .brand-title {
+        font-size: 34px;
+    }
+
+    .description {
+        padding: 0 20px;
+    }
+    /* this is a quick styles  */
+.quick-list {
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.quick-image-gallery {
+    grid-template-columns: repeat(1, 1fr);
+}
+.team-info{
+    text-align: center;
+    margin-bottom: 40px;
+}
+}
+
+
